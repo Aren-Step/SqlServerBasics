@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/4526769c-91fd-4a9d-943c-8bebc199f3e1/Bookshop--query.sql" value="4526769c-91fd-4a9d-943c-8bebc199f3e1" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/4526769c-91fd-4a9d-943c-8bebc199f3e1/Example-Database--query.sql" value="4526769c-91fd-4a9d-943c-8bebc199f3e1" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/4526769c-91fd-4a9d-943c-8bebc199f3e1/initialize_Library.sql" value="4526769c-91fd-4a9d-943c-8bebc199f3e1" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/4526769c-91fd-4a9d-943c-8bebc199f3e1/select_from_Library.sql" value="4526769c-91fd-4a9d-943c-8bebc199f3e1" />
+    <file url="file://$PROJECT_DIR$/Queries/Bookshop--query.sql" value="4526769c-91fd-4a9d-943c-8bebc199f3e1" />
+    <file url="file://$PROJECT_DIR$/Queries/Example-Database--query.sql" value="4526769c-91fd-4a9d-943c-8bebc199f3e1" />
+    <file url="file://$PROJECT_DIR$/Queries/initialize_Library.sql" value="4526769c-91fd-4a9d-943c-8bebc199f3e1" />
+    <file url="file://$PROJECT_DIR$/Queries/select_from_Library.sql" value="4526769c-91fd-4a9d-943c-8bebc199f3e1" />
   </component>
 </project>
