@@ -118,3 +118,30 @@ GROUP BY b.b_id, b.b_name
 HAVING COUNT(m2m_books_authors.a_id) > 1;
 
 GO
+
+-- Show the most popular author(s) (using TOP WITH TIES)
+WITH [prepared_data]
+    AS (SELECT authors.a_id,
+               authors.a_name,
+               COUNT(sb_book) AS books
+        FROM authors
+        JOIN m2m_books_authors AS m2mba
+            ON authors.a_id = m2mba.a_id
+        LEFT JOIN subscriptions
+            ON m2mba.b_id = sb_book
+        GROUP BY authors.a_id, a_name)
+SELECT TOP 1 WITH TIES a_id,
+                       a_name,
+                       books
+FROM prepared_data
+ORDER BY books DESC
+
+-- Show average authors popularity
+SELECT AVG(CAST(books AS FLOAT)) AS avg_reading
+FROM (SELECT COUNT(sb_book) AS books
+      FROM authors
+      JOIN m2m_books_authors
+          ON authors.a_id = m2m_books_authors.a_id
+      LEFT JOIN subscriptions
+        ON m2m_books_authors.b_id = sb_book
+      GROUP BY authors.a_id) AS prepared_data
