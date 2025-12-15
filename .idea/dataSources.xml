@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Debian-Server" uuid="4526769c-91fd-4a9d-943c-8bebc199f3e1">
+    <data-source source="LOCAL" name="Debian Server (Server Agent)" uuid="4526769c-91fd-4a9d-943c-8bebc199f3e1">
       <driver-ref>sqlserver.ms</driver-ref>
       <synchronize>true</synchronize>
+      <remarks>login to the Debian Server as Server Agent.</remarks>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
       <jdbc-url>jdbc:sqlserver://100.106.50.123:1433</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="Debian Server" uuid="84f099b4-aeb7-447a-98b4-763e67bc42c5">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <remarks>login to the Debian Server as aren.</remarks>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://100.106.50.123:1433;database=Library</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
