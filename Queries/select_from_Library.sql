@@ -145,3 +145,25 @@ FROM (SELECT COUNT(sb_book) AS books
       LEFT JOIN subscriptions
         ON m2m_books_authors.b_id = sb_book
       GROUP BY authors.a_id) AS prepared_data
+
+
+-- Add user
+/*
+CREATE LOGIN aren WITH PASSWORD = 'the2736@sqlsrv', CHECK_POLICY = OFF;
+USE Bookshop
+CREATE USER aren_Bookshop FOR LOGIN aren
+EXEC sp_addrolemember 'db_datareader', 'aren_Bookshop'
+EXEC sp_addrolemember 'db_datawriter', 'aren_Bookshop'
+
+-- Select all users from the database
+SELECT
+    name AS DatabaseUserName,
+    type_desc AS UserType,
+    create_date,
+    default_schema_name
+FROM sys.database_principals
+WHERE type IN ('S', 'U') -- S=SQL User, U=Windows User
+  AND name NOT IN ('dbo', 'guest', 'sys', 'INFORMATION_SCHEMA') -- Exclude built-in accounts
+ORDER BY name;
+GO
+*/

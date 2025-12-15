@@ -2,8 +2,7 @@
 <project version="4">
   <component name="DataSourcePerFileMappings">
     <file url="file://$PROJECT_DIR$/Queries/Bookshop--query.sql" value="4526769c-91fd-4a9d-943c-8bebc199f3e1" />
-    <file url="file://$PROJECT_DIR$/Queries/Example-Database--query.sql" value="4526769c-91fd-4a9d-943c-8bebc199f3e1" />
-    <file url="file://$PROJECT_DIR$/Queries/initialize_Library.sql" value="4526769c-91fd-4a9d-943c-8bebc199f3e1" />
-    <file url="file://$PROJECT_DIR$/Queries/select_from_Library.sql" value="4526769c-91fd-4a9d-943c-8bebc199f3e1" />
+    <file url="file://$PROJECT_DIR$/Queries/initialize_Library.sql" value="84f099b4-aeb7-447a-98b4-763e67bc42c5" />
+    <file url="file://$PROJECT_DIR$/Queries/select_from_Library.sql" value="84f099b4-aeb7-447a-98b4-763e67bc42c5" />
   </component>
 </project>
