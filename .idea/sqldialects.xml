@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Queries/Basic_Syntaxes.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/Queries/Bookshop--query.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/Queries/initialize_Library.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/Queries/retrieve last identity.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/Queries/select_from_Library.sql" dialect="TSQL" />
   </component>
 </project>
